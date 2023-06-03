@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
 import logoImg from "../images/parkspot-logo.png";
+import carImg from "../images/car-circle.png";
 ---
 
 <Layout title="Welcome to ParkSpot.">
@@ -19,19 +20,28 @@ import logoImg from "../images/parkspot-logo.png";
     </div>
   </nav>
   <main>
-    <div class="py-24 hero-bg">
-      <div class="flex flex-col gap-4 mx-12 text-white items-start">
-        <h1 class="text-4xl">
-          Reclaim Your Parking Rights With Our Simple &amp; Easy-To-Use App
-        </h1>
-        <div>
-          <h2 class="text-2xl">Welcome to Parkspot!</h2>
-          <p>
-            A modern application to ensure that you and your visitors always
-            have a parking spot in your residential community!
-          </p>
+    <div class="hero-bg">
+      <div class="grid grid-cols-2">
+        <div class="ml-12 py-24 flex flex-col gap-4 text-white items-start">
+          <h1 class="text-4xl">
+            Reclaim Your Parking Rights With Our Simple &amp; Easy-To-Use App
+          </h1>
+          <div>
+            <h2 class="text-2xl">Welcome to Parkspot!</h2>
+            <p>
+              A modern application to ensure that you and your visitors always
+              have a parking spot in your residential community!
+            </p>
+          </div>
+          <button>Contact us now!</button>
         </div>
-        <button>Contact us now!</button>
+        <div class="relative overflow-hidden">
+          <Image
+            src={carImg}
+            alt="Hero car"
+            class="absolute min-h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   </main>
@@ -42,7 +52,7 @@ import logoImg from "../images/parkspot-logo.png";
     background: radial-gradient(
         circle,
         rgba(255, 255, 255, 0) 0%,
-        rgba(19, 211, 128, 1) 62%,
+        rgba(19, 211, 128, 1) 32%,
         rgba(3, 170, 96, 1) 100%
       ),
       linear-gradient(
