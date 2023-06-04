@@ -21,11 +21,11 @@ import carImg from "../images/car-circle.png";
   </nav>
   <main>
     <div class="hero-bg">
-      <div class="md:grid md:grid-cols-2">
+      <div class="lg:grid lg:grid-cols-2">
         <div
-          class="flex flex-col gap-4 text-white items-start ml-12 sm:mr-12 sm:py-8 md:py-24"
+          class="flex flex-col gap-4 text-white items-start ml-12 sm:mr-12 sm:py-8 lg:py-24"
         >
-          <h1 class="text-4xl">
+          <h1 class="text-4xl text-center lg:text-left">
             Reclaim Your Parking Rights With Our Simple &amp; Easy-To-Use App
           </h1>
           <div>
@@ -37,11 +37,13 @@ import carImg from "../images/car-circle.png";
           </div>
           <button>Contact us now!</button>
         </div>
-        <div class="md:relative md:overflow-hidden">
+        <div
+          class="sm:flex sm:flex-row sm:justify-center lg:relative lg:overflow-hidden"
+        >
           <Image
             src={carImg}
             alt="Hero car"
-            class="sm:h-72 sm:object-contain md:absolute md:object-cover md:object-left md:inset-0 md:m-auto md:h-fit lg:h-full"
+            class="sm:h-72 sm:object-contain lg:absolute lg:object-cover lg:object-left lg:inset-0 lg:m-auto lg:h-fit lg:h-full"
           />
         </div>
       </div>
