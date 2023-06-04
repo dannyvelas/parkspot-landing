@@ -39,7 +39,7 @@ import carImg from "../images/car-circle.png";
           <Image
             src={carImg}
             alt="Hero car"
-            class="absolute min-h-full object-cover"
+            class="absolute object-cover object-left h-full top-0 right-0"
           />
         </div>
       </div>
@@ -61,5 +61,9 @@ import carImg from "../images/car-circle.png";
         rgba(16, 255, 152, 1) 50%,
         rgba(255, 255, 255, 0) 58%
       );
+  }
+
+  .rtl-grid {
+    direction: rtl;
   }
 </style>
