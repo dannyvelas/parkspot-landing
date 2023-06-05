@@ -6,13 +6,11 @@ import carImg from "../images/car-circle.png";
 ---
 
 <Layout title="Welcome to ParkSpot.">
-  <nav class="sm:relative">
-    <div
-      class="mx-4 py-4 sm:absolute sm:left-0 sm:right-0 sm:z-10 md:mx-12 lg:mx-24"
-    >
+  <nav class="relative">
+    <div class="mx-4 py-4 absolute left-0 right-0 sm:z-10 md:mx-12 lg:mx-24">
       <div class="grid grid-cols-3 items-center">
         <Image src={logoImg} width={150} alt="ParkSpot logo" />
-        <div class="flex flex-row justify-center gap-8 text-center text-white">
+        <div class="flex flex-row justify-between text-center text-white">
           <a href="#features">Features</a>
           <a href="#about">About</a>
           <a href="#testimonials">Testimonials</a>
