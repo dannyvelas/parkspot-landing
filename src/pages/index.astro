@@ -12,12 +12,14 @@ import carImg from "../images/car-circle.png";
         <a href="/">
           <img src={logoImg.src} class="h-auto w-28" alt="ParkSpot Logo" />
         </a>
-        <div
-          class="hidden sm:block sm:flex sm:flex-row sm:justify-between sm:text-center sm:text-white"
-        >
-          <a href="#features">Features</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
+        <div class="hidden sm:block sm:flex sm:flex-row sm:justify-center">
+          <div
+            class="justify-between flex flex-row text-white w-80"
+          >
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+          </div>
         </div>
         <div class="text-right text-white">
           <a href="https://app.park-spot.co/login">Login</a>
@@ -26,22 +28,30 @@ import carImg from "../images/car-circle.png";
     </div>
   </nav>
   <main>
-    <div class="hero-bg sm:grid sm:grid-cols-2 h-screen items-center">
-      <div
-        class="flex flex-col gap-4 text-white mx-4 pt-24 sm:items-start sm:pt-0 md:mx-12 lg:ml-24 lg:mr-12"
-      >
-        <h1 class="text-xl text-center font-bold sm:text-6xl sm:text-left">
-          Reclaim Your Parking Rights With ParkSpot
-        </h1>
-        <div>
-          <p class="text-center sm:text-left">
-            ParkSpot guarantees that you and your visitors will have a parking
-            spot in your community!
-          </p>
+    <div class="hero-bg sm:flex sm:flex-row sm:justify-center">
+      <div class="sm:grid sm:grid-cols-2 sm:items-center sm:max-w-7xl">
+        <div
+          class="flex flex-col gap-4 text-white mx-4 pt-20 sm:items-start sm:pt-36 sm:pb-32 md:mx-12 lg:ml-24 lg:mr-12"
+        >
+          <h1 class="text-xl text-center font-bold sm:text-6xl sm:text-left">
+            Reclaim Your Parking Rights With ParkSpot
+          </h1>
+          <div>
+            <p class="text-center sm:text-left">
+              ParkSpot guarantees that you and your visitors will have a parking
+              spot in your community!
+            </p>
+          </div>
+          <button>Contact us now!</button>
         </div>
-        <button>Contact us now!</button>
+        <div class="flex flex-row justify-center">
+          <img
+            src={carImg.src}
+            alt="Hero car"
+            class="h-72 object-contain sm:object-cover sm:h-full"
+          />
+        </div>
       </div>
-      <Image src={carImg} alt="Hero car" class="h-72 object-contain sm:h-fit" />
     </div>
   </main>
 </Layout>
