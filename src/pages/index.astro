@@ -121,7 +121,7 @@ import dashboardCorner from "../images/dashboard-corner.png";
       class="bg-gray-200 flex flex-col items-center sm:py-8 sm:px-4 md:px-12 lg:px-24"
     >
       <div
-        class="bg-green-with-s sm:grid sm:grid-cols-2 sm:rounded-lg max-w-7xl"
+        class="bg-[#13d380] bg-green-with-s sm:grid sm:grid-cols-2 sm:rounded-lg max-w-7xl"
       >
         <div class="pt-12 px-12 sm:py-12 sm:px-12">
           <div class="text-white flex flex-col gap-4 items-start">
@@ -167,10 +167,12 @@ import dashboardCorner from "../images/dashboard-corner.png";
     );
   }
 
-  .bg-green-with-s {
-    background-image: url("../images/parkspot-emblem-white.png"),
-      linear-gradient(to right, #13d380, #13d380); /* hack to layer image over solid color */
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (min-width: 640px) {
+    .bg-green-with-s {
+      background-image: url("../images/parkspot-emblem-white.png"),
+        linear-gradient(to right, #13d380, #13d380); /* hack to layer image over solid color */
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 </style>
