@@ -33,85 +33,80 @@ import dashboardCorner from "../images/dashboard-corner.png";
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center">
+    <div
+      class="max-w-7xl flex flex-col mx-0 mt-0 sm:gap-8 sm:my-8 sm:mx-4 md:mx-12 lg:mx-24"
+    >
       <div
-        class="max-w-7xl flex flex-col mx-0 mt-0 sm:gap-8 sm:mt-8 sm:mx-4 md:mx-12 lg:mx-24"
+        class="section-1-bg col-span-2 py-12 px-8 sm:rounded-lg sm:px-0 sm:flex sm:flex-row sm:justify-center"
       >
-        <div
-          class="section-1-bg col-span-2 py-12 px-8 sm:rounded-lg sm:px-0 sm:flex sm:flex-row sm:justify-center"
-        >
-          <div class="sm:grid sm:grid-cols-2 sm:gap-4 sm:max-w-7xl">
-            <div
-              class="flex flex-col justify-center gap-4 sm:items-start sm:mx-12"
-            >
-              <p class="text-green-500">WHY PARKSPOT?</p>
-              <h2 class="text-white text-4xl mb-4">
-                ParkSpot Fixes Your Community's Parking Problems
-              </h2>
-              <p class="text-white">
-                ParkSpot was designed to protect your residential parking
-                rights, by making sure that everyone abides by the community
-                parking policy. That way, you’ll have the best chances of coming
-                home to vacant and well-situated parking spots.
-              </p>
-            </div>
-            <div class="flex flex-row justify-center my-8">
-              <img
-                src={carsParkingImg.src}
-                alt="Cars Parking"
-                class="object-cover h-72"
-              />
-            </div>
+        <div class="sm:grid sm:grid-cols-2 sm:gap-4 sm:max-w-7xl">
+          <div
+            class="flex flex-col justify-center gap-4 sm:items-start sm:mx-12"
+          >
+            <p class="text-green-500">WHY PARKSPOT?</p>
+            <h2 class="text-white text-4xl mb-4">
+              ParkSpot Fixes Your Community's Parking Problems
+            </h2>
+            <p class="text-white">
+              ParkSpot was designed to protect your residential parking rights,
+              by making sure that everyone abides by the community parking
+              policy. That way, you’ll have the best chances of coming home to
+              vacant and well-situated parking spots.
+            </p>
+          </div>
+          <div class="flex flex-row justify-center my-8">
+            <img
+              src={carsParkingImg.src}
+              alt="Cars Parking"
+              class="object-cover h-72"
+            />
           </div>
         </div>
-        <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-          <div
-            class="bg-gray-200 flex flex-col sm:justify-between sm:rounded-lg"
-          >
-            <div class="flex flex-col gap-4 px-12 pt-12">
-              <p class="text-green-500">OUR GOAL</p>
-              <h2 class="text-zinc-950 text-4xl mb-4">
-                Fair Visitor Parking For Everyone
-              </h2>
-              <p class="text-gray-500">
-                ParkSpot allows residents to create parking permits for their
-                visitors, while at the same time making sure that one resident
-                doesn’t over-use their visitor parking.
-              </p>
-              <p class="text-gray-500">
-                Administrators can use ParkSpot to set a policy to limit the
-                amount of visitor parking days of every resident.
-              </p>
-            </div>
-            <img
-              src={community.src}
-              alt="Happy Community"
-              class="h-48 object-contain sm:h-full sm:object-cover lg:h-72 lg:object-contain"
-            />
+      </div>
+      <div class="sm:grid sm:grid-cols-2 sm:gap-4">
+        <div class="bg-gray-200 flex flex-col sm:justify-between sm:rounded-lg">
+          <div class="flex flex-col gap-4 px-12 pt-12">
+            <p class="text-green-500">OUR GOAL</p>
+            <h2 class="text-zinc-950 text-4xl mb-4">
+              Fair Visitor Parking For Everyone
+            </h2>
+            <p class="text-gray-500">
+              ParkSpot allows residents to create parking permits for their
+              visitors, while at the same time making sure that one resident
+              doesn’t over-use their visitor parking.
+            </p>
+            <p class="text-gray-500">
+              Administrators can use ParkSpot to set a policy to limit the
+              amount of visitor parking days of every resident.
+            </p>
           </div>
-          <div class="bg-zinc-950 flex flex-col sm:rounded-lg">
-            <div class="flex flex-col gap-4 px-12 py-12">
-              <p class="text-green-500">OUR SOLUTION</p>
-              <h2 class="text-white text-4xl mb-4">
-                Policy backed by Data-Driven Software
-              </h2>
-              <p class="text-white">
-                ParkSpot records the details of every resident’s visitor
-                permits. If someone reaches their limit of visitor days,
-                ParkSpot will prevent that person from creating additional
-                permits.
-              </p>
-              <p class="text-white">
-                ParkSpot can also be used to find faked visitor permits. So,
-                those who try to cheat the policy will be easily exposed.
-              </p>
-            </div>
-            <img
-              src={dashboardCorner.src}
-              alt="Peek of ParkSpot Dashboard"
-              class="self-end sm:h-full sm:object-fill xl:h-72 xl:object-contain"
-            />
+          <img
+            src={community.src}
+            alt="Happy Community"
+            class="h-48 object-contain sm:h-full sm:object-cover lg:h-72 lg:object-contain"
+          />
+        </div>
+        <div class="bg-zinc-950 flex flex-col sm:rounded-lg">
+          <div class="flex flex-col gap-4 px-12 py-12">
+            <p class="text-green-500">OUR SOLUTION</p>
+            <h2 class="text-white text-4xl mb-4">
+              Policy backed by Data-Driven Software
+            </h2>
+            <p class="text-white">
+              ParkSpot records the details of every resident’s visitor permits.
+              If someone reaches their limit of visitor days, ParkSpot will
+              prevent that person from creating additional permits.
+            </p>
+            <p class="text-white">
+              ParkSpot can also be used to find faked visitor permits. So, those
+              who try to cheat the policy will be easily exposed.
+            </p>
           </div>
+          <img
+            src={dashboardCorner.src}
+            alt="Peek of ParkSpot Dashboard"
+            class="self-end sm:h-full sm:object-fill xl:h-72 xl:object-contain"
+          />
         </div>
       </div>
     </div>
