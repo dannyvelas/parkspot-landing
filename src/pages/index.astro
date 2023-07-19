@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import carImg from "../images/car-circle.png";
+import gateImg from "../images/gate.png";
 import community from "../images/community.png";
 import carsParkingImg from "../images/cars-parking.png";
 import dashboardCorner from "../images/dashboard-corner.png";
@@ -34,7 +35,7 @@ import dashboardCorner from "../images/dashboard-corner.png";
       </div>
     </div>
     <div
-      class="max-w-7xl flex flex-col mx-0 mt-0 sm:gap-8 sm:my-8 sm:mx-4 md:mx-12 lg:mx-24"
+      class="max-w-7xl flex flex-col mx-0 my-0 sm:gap-8 sm:my-8 sm:mx-4 md:mx-12 lg:mx-24"
     >
       <div
         class="section-1-bg col-span-2 py-12 px-8 sm:rounded-lg sm:px-0 sm:flex sm:flex-row sm:justify-center"
@@ -110,6 +111,28 @@ import dashboardCorner from "../images/dashboard-corner.png";
         </div>
       </div>
     </div>
+    <div class="bg-gray-200 sm:py-8 sm:px-4 md:px-12 lg:px-24">
+      <div class="bg-green-with-s sm:grid sm:grid-cols-2 sm:rounded-lg">
+        <div class="py-12 px-12">
+          <div class="text-white flex flex-col items-start">
+            <h2 class="text-4xl">
+              Parking Control and Monitoring Have Never Been Easier!
+            </h2>
+            <p>
+              For the first five communities to sign up, we will tailor our
+              product, onboard everyone, and provide 24/7 customer support for
+              free for the first 6 months!
+            </p>
+            <button class="bg-black py-2 px-4 rounded-lg">
+              Contact us now!
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <img src={gateImg.src} alt="Red car at residential gate" />
+        </div>
+      </div>
+    </div>
   </main>
 </Layout>
 
@@ -132,5 +155,12 @@ import dashboardCorner from "../images/dashboard-corner.png";
       #13d380 8%,
       #000 20%
     );
+  }
+
+  .bg-green-with-s {
+    background-image: url("../images/parkspot-emblem-white.png"),
+      linear-gradient(to right, #13d380, #13d380);
+    background-repeat: no-repeat;
+    background-position: right;
   }
 </style>
