@@ -5,6 +5,8 @@ import gateImg from "../images/gate.png";
 import community from "../images/community.png";
 import carsParkingImg from "../images/cars-parking.png";
 import dashboardCorner from "../images/dashboard-corner.png";
+import logoImg from "../images/parkspot-logo-black-green.png";
+import linkedinLogo from "../images/linkedin-logo-green.png";
 ---
 
 <Layout title="Welcome to ParkSpot.">
@@ -38,10 +40,10 @@ import dashboardCorner from "../images/dashboard-corner.png";
         </div>
       </div>
     </div>
-    <!-- the div right below this comment is needed for centering all the banners in the white section -->
-    <div class="flex flex-col items-center sm:py-8 sm:px-4 md:px-12 lg:px-24">
+    <!-- the div right below this comment is the white section -->
+    <div class="sm:py-8 sm:px-4 md:px-12 lg:px-24">
       <!-- the div right below this comment is contains all the banners in the white section -->
-      <div class="max-w-7xl flex flex-col mx-0 my-0 sm:gap-4">
+      <div class="max-w-7xl flex flex-col mx-auto my-0 sm:gap-4">
         <div
           class="section-1-bg col-span-2 py-12 px-8 sm:rounded-lg sm:px-0 sm:flex sm:flex-row sm:justify-center"
         >
@@ -120,12 +122,10 @@ import dashboardCorner from "../images/dashboard-corner.png";
         </div>
       </div>
     </div>
-    <!-- the div right below this comment is needed for centering all the banners in the gray section. it has the same padding logic of parent div of white section -->
-    <div
-      class="bg-gray-200 flex flex-col items-center sm:py-8 sm:px-4 md:px-12 lg:px-24"
-    >
+    <!-- the div right below this comment is the gray section. it has the same padding logic of parent div of white section -->
+    <div class="bg-gray-200 sm:py-8 sm:px-4 md:px-12 lg:px-24">
       <div
-        class="bg-[#13d380] bg-green-with-s sm:grid sm:grid-cols-2 sm:rounded-lg max-w-7xl"
+        class="bg-[#13d380] bg-green-with-s max-w-7xl mx-auto sm:grid sm:grid-cols-2 sm:rounded-lg"
       >
         <div class="pt-12 px-12 sm:py-12 sm:px-12">
           <div class="text-white flex flex-col gap-4 items-start">
@@ -144,6 +144,21 @@ import dashboardCorner from "../images/dashboard-corner.png";
         </div>
         <div class="flex flex-col justify-center">
           <img src={gateImg.src} alt="Red car at residential gate" />
+        </div>
+      </div>
+    </div>
+    <!-- the div right below this comment is the footer. it has the same padding logic as the parent divs of white and gray sections -->
+    <div class="sm:py-8 sm:px-4 md:px-12 lg:px-24">
+      <div
+        class="mx-auto flex flex-row justify-between max-w-7xl text-neutral-400 text-xs"
+      >
+        <div class="flex flex-col gap-4 items-start">
+          <img src={logoImg.src} class="h-auto w-28" alt="ParkSpot Logo" />
+          <p>The friendly residential parking app.</p>
+        </div>
+        <div class="flex flex-col justify-between items-start">
+          <img src={linkedinLogo.src} class="h-auto w-3" alt="Linkedin Logo" />
+          <p>parkspotapplication@gmail.com</p>
         </div>
       </div>
     </div>
