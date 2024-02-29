@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Emphasis from "../components/Emphasis.astro";
+---
+
+<Layout title="ParkSpot">
+  <main>
+    <div class="hero-bg sm-bg-green">
+      <div
+        class="flex flex-col gap-4 mx-auto my-0 pb-4 sm:gap-0 sm:grid sm:grid-cols-2 sm:items-center sm:max-w-7xl sm:pb-0"
+      >
+        <div
+          class="flex flex-col gap-4 text-white mx-4 pt-20 items-center sm:items-start sm:pt-36 sm:pb-32 md:mx-12 lg:ml-24 lg:mr-12"
+        >
+          <h1 class="text-xl text-center font-bold sm:text-6xl sm:text-left">
+            Information for Las Vistas Residents
+          </h1>
+          <div>
+            <p class="text-center sm:text-left">
+              Learn about how to use ParkSpot as a Resident!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the div right below this comment is contains all the banners in the white section -->
+    <div
+      class="bg-black py-8 px-8 sm:px-0 sm:flex sm:flex-row sm:justify-center sm:py-4"
+    >
+      <div class="flex flex-col justify-center gap-4 sm:items-start sm:mx-12">
+        <p class="text-green-500">USERNAME RULES</p>
+        <h2 class="text-white text-2xl font-bold">Username Schema</h2>
+        <p class="text-white">
+          The username of every resident account in Parkspot should start with a
+          <Emphasis>T</Emphasis> or a <Emphasis>B</Emphasis>. For example:
+          <Emphasis>T1234567</Emphasis> or <Emphasis>B1234567</Emphasis>.
+        </p>
+        <h2 class="text-white text-2xl font-bold">Tenants Vs Owners</h2>
+        <p class="text-white">
+          If the resident is a tenant, then they should have a username like
+          <Emphasis>T1234567</Emphasis>. If they are an owner they should have a
+          username like
+          <Emphasis>B1234567</Emphasis>.
+        </p>
+        <h2 class="text-white text-2xl font-bold">Numbers Representation</h2>
+        <p class="text-white">
+          The first four numbers of the username represent the building number
+          of the account holder. So for example, if someone had the username
+          <Emphasis>T1234567</Emphasis>, this would mean that they live in
+          building <Emphasis>1234</Emphasis>.
+        </p>
+        <p class="text-white">
+          The last 3 numbers represent the unit number of the account holder. So
+          for example, if someone had the username <Emphasis>
+            T1234567
+          </Emphasis>, this would mean that they live in unit <Emphasis>
+            567
+          </Emphasis>.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  @media (max-width: 640px) {
+    .sm-bg-green {
+      background-color: #13d380;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .hero-bg {
+      background-image: radial-gradient(
+          circle at center,
+          rgba(255, 255, 255, 0) 0%,
+          #13d380 32%,
+          rgba(3, 170, 96, 1) 100%
+        ),
+        url("../images/parkspot-emblem.png");
+      background-position: center, center;
+      background-size: auto, 10px;
+    }
+  }
+</style>
